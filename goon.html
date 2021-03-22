@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+      body{
+            background-color:black;
+            color:white;
+            font-size: large;
+            display:flex;
+            font-family: 'Roboto Mono', monospace;
+        }
+        a{
+          color:white;
+        float:right;
+        margin:5px 10px;
+        }
+        h3{
+          margin:auto;
+        }
+        p{font-size: larger;}
+        .gameplay{
+          margin:auto;
+      
+        }
+        button{
+          background-color: black;
+          color:white;
+          margin:10px;
+          padding:10px;
+          border:1px solid;
+        }
+    </style>
+</head>
+<body onload="typeWriter()">
+<div class="gameplay">
+  <p id="demo"></p>
+  <div class="options">
+  <button><a href="..\bugvision\index.html">image</a></button>
+  <button><a href="..\soundscape\index.html">sound</a></button>
+</div>
+</div>
+    <script>
+      var i = 0;
+var txt = '_request more data...';
+var speed = 70;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+    </script>
+</body>
+</html>
