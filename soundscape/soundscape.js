@@ -10,7 +10,6 @@ function preload() {
   soundFormats('mp3', 'ogg');
   mySound = loadSound('data/poulakia');
   soundleft = loadSound('data/zouzounisma');
-  soundright = loadSound('data/stagonesright');
   drops=loadImage('data/blendpark.jpg');
   imgMask = loadImage('data/n2Mask.png'); 
 
