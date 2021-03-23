@@ -23,7 +23,7 @@ function preload() {
   //img = loadImage('data/skalakia.jpg'); // Load the image
   //imgRight = loadImage('data/treeleft.jpg'); // Load the image
 
-  imgMask = loadImage('data/n2Mask.png'); // Load the image
+  //imgMask = loadImage('data/n2Mask.png'); // Load the image
   for (let i=0; i<15; i++) {
     imgX[i]=loadImage('data/bug'+i+'.png');
   }
@@ -38,7 +38,7 @@ function setup() {
 
 function draw() {
   //background(255);
-  imgRatio=imgMask.width/imgMask.height;
+  //imgRatio=imgMask.width/imgMask.height;
   imgOnRatio[x1]=imgOndisplay[x1].width/imgOndisplay[x1].height;
   imgOnRatio[x2]=imgOndisplay[x2].width/imgOndisplay[x2].height;
   imgOnRatio[x3]=imgOndisplay[x3].width/imgOndisplay[x3].height;
