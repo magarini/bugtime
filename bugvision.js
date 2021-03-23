@@ -13,7 +13,7 @@ let imgLeft, imgRight; // Declare variable 'img'.
 let imgMask;
 let imgRatio;
 let imgOnRatio=[];
-let imgOndisplay;
+let imgOndisplay=[];
 let imgX=[];
 let imgY=[];
 let x1=0;x2=1;x3=2,x4=3;
@@ -45,7 +45,7 @@ function draw() {
   imgOnRatio[x4]=imgOndisplay[x4].width/imgOndisplay[x4].height;
 
 
-  let imgMaskRatio=imgMask.width/imgMask.height;
+ // let imgMaskRatio=imgMask.width/imgMask.height;
 
   // Displays the image at its actual size at point (0,0)
   image(imgOndisplay[x1], width/2, height/2, windowWidth, windowWidth/imgOnRatio[x1]);
