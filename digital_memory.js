@@ -10,6 +10,7 @@ let thoughts=['we knew exactly where it was',
               
              ];
 let memory;
+let thought;
 function preload(){
   //tree=loadImage("tree.jpg");
   nest=loadImage("data/bug.png");
@@ -20,7 +21,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, innerHeight);
   memory.hide();
   //push();
   //tint(255, 200);
@@ -46,14 +47,16 @@ function draw() {
   //scale(1.5);
   //rotate(random(2)*HALF_PI);
 
-  //imageMode(CENTER);
-  image(memory,0,0, windowWidth,windowWidth/memRatio);
+  imageMode(CENTER);
+  // image(memory,0,0, windowWidth,windowWidth/memRatio);
+  image(memory,width/2,height/2);
+
    pop();
   textAlign(CENTER);
   textFont('monospace');
   text(thought,mouseX,mouseY);
   fill(255);
-  textSize(18);
+  textSize(16);
   push();
   scale(0.2);
   tint(255, 126);
