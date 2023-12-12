@@ -49,6 +49,17 @@ if(videoplaying==vid){
   videoplaying=vid;
 }
 }
+
+function touchStarted() {
+  if(videoplaying==vid){
+    videoplaying=vid2;
+  }else{
+    videoplaying=vid;
+  }
+  console.log('touched')
+}
+
+
 //}
 function mouseClicked(){
   vid.elt.muted = false;
